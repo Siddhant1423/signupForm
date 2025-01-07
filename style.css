@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.card-container{
+    position: relative;
+    width: 33vw;
+}
+
+.card-image{
+    position: absolute;
+    width: 33vw;
+    height: 100vh;
+    z-index: -1;
+}
+.card-heading{
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    top: 16rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 100px;
+    padding: 10px 0px;
+    color: white;
+}
+.card-heading img, .card-heading span{
+    
+    font-family: 'norsebold';
+    vertical-align: middle;
+}
+.card-link{
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    bottom: 0rem;
+    font-size: small;
+}
+.card-link a{
+    color: white;
+}
+
+body{
+    display: flex;
+}
+
+
+.form-container{
+    box-sizing: content-box;
+    background-color:whitesmoke;
+    width: 67vw;
+    height: 100vh;
+}
+.info-container{
+    padding: 150px 50px 50px 50px;
+    width: 800px;
+}
+.info-container p{
+    padding-bottom: 15px;
+    font-family:sans-serif;
+    font-weight:600;
+    font-size: 20px
+}
+.input-container{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px 50px;
+}
+
+.flex-container{
+    display: flex;
+    gap: 80px;
+    padding: 15px 0px; 
+}
+
+input{
+    appearance: none;
+    display: block;
+    margin-bottom: 20px;
+    height: 24px;
+    width: 296px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-radius: 4px;
+    
+}
+label{
+    font-size: small;
+    font-weight: 600;
+    color: #696969;
+}
