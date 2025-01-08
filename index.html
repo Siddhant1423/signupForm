@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="card-container">
-        <img src="images/halie-west-unsplash.jpg" alt="" class="card-image">
+        <img src="images/halie-west-unsplash.jpg" alt="halie-west-unsplash" class="card-image">
         <div class="card-heading">
-            <img src="images/odin-lined.png" alt="" height="130px" width="100px"><span>ODIN</span> 
+            <img src="images/odin-lined.png" alt="odin-lined" height="130px" width="100px"><span>ODIN</span> 
         </div>
         <div class="card-link">
             A photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a>  on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>. 
@@ -22,9 +22,9 @@
             <p>Sign Up <em>now</em> to get started.</p>
 
         </div>
-        <form action="post">
+        <form action="#" method="get">
             <div class="input-container">
-                <h3>Let's do this!</h3>
+                <h2>Let's do this!</h2>
                 <div class="flex-container">
                     <div>
                         <p>
@@ -37,7 +37,7 @@
                     </p>
                     <p>
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd">
+                        <input type="password" id="pwd" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
                     </p>
                     
                     </div>
@@ -52,14 +52,16 @@
                         </p>
                         <p>
                             <label for="confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm">
+                            <input type="password" id="confirm" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
                         </p>
                     
                     </div>
                 </div>
             </div>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <div class="submit-container">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </form>
 
 

@@ -47,6 +47,7 @@
     text-align: center;
     bottom: 0rem;
     font-size: small;
+    padding-bottom: 8px;
 }
 .card-link a{
     color: white;
@@ -69,7 +70,7 @@ body{
 }
 .info-container p{
     padding-bottom: 15px;
-    font-family:sans-serif;
+    font-family:"roboto";
     font-weight:600;
     font-size: 20px
 }
@@ -77,8 +78,9 @@ body{
     background-color: white;
     box-sizing: border-box;
     padding: 15px 50px;
+    box-shadow: 5px 5px 10px lightgray;
 }
-
+ 
 .flex-container{
     display: flex;
     gap: 80px;
@@ -86,18 +88,48 @@ body{
 }
 
 input{
-    appearance: none;
     display: block;
     margin-bottom: 20px;
-    height: 24px;
+    height: 32px;
     width: 296px;
     border-color: #E5E7EB;
     border-style: solid;
     border-radius: 4px;
+    font-size: larger;
     
 }
 label{
     font-size: small;
     font-weight: 600;
     color: #696969;
+}
+.submit-container{
+    padding: 35px 50px;
+}
+
+button{
+    color: white;
+    background-color: #596D48;
+    border-color: white;
+    padding: 12px 44px;
+    border-style: none;
+    border-radius: 6px;
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.submit-container a{
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px lightgray;
+}
+input[type="password"]:invalid{
+    outline: none;
+    border: 1px solid red;
 }
